@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo/screens/add_task_screen.dart';
-import 'package:todo/widgets/task_tile.dart';
+import 'package:todo/widgets/task_list.dart';
 
 class TasksScreen extends StatelessWidget {
   const TasksScreen({Key? key}) : super(key: key);
@@ -69,26 +69,6 @@ class TasksScreen extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
-
-class TaskList extends StatelessWidget {
-  const TaskList({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return ListView(
-      children: const [
-        TaskTile(),
-        TaskTile(),
-        TaskTile(),
-        TaskTile(),
-        TaskTile(),
-        TaskTile(),
-      ],
     );
   }
 }
